@@ -8,3 +8,9 @@ function display_text() {                   //create function that displays two 
     str += " and here is more text";
     document.getElementById("text1").innerHTML = str;
 }
+
+function challenge() {
+    var str = "I made my own function";
+    var str2 = " and I concatenated it.";
+    document.getElementById("button").innerHTML = str + str2;
+}
