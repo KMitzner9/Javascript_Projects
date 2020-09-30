@@ -46,13 +46,13 @@ function random_number() {      //random number function
     document.getElementById("random").innerHTML = R;
 }
 
-function decrement_function() {
+function decrement_function() {     //decrement function
     Z = 10;
     var dec = --Z;
     document.getElementById("decrement").innerHTML = dec;
 }
 
-function increment_function() {
+function increment_function() {     //increment function
     I = 10;
     var inc = ++I;
     document.getElementById("increment").innerHTML = inc;
