@@ -20,3 +20,17 @@ var Firebender = Firebender.fontcolor("red");
 document.write(Earthbender + Airbender + Firebender + Waterbender);                                   // print all variables
 
 document.write(8 * 3);                                                                                // print a function
+
+function hoFunction() {
+    return window.alert(A);
+}
+
+function My_First_Function() {
+    var str = "This text is green!";
+    var result = str.fontcolor("green");
+    document.getElementById("Green_Text").innerHTML = result;
+}
+
+function turnGreen() {
+    
+}
