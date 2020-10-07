@@ -17,8 +17,7 @@ function Input_Digit(digit) {
         Calculator.Wait_Second_Operand = false;
     }
     //if the display value is 0, it is overwritten with the new input
-    //if there is already a value there, the two values are concatenated
-    //why is this necessary if anything added to 0 is itself?
+    //otherwise the current value and input value are concatenated
     else {
         Calculator.Display_Value = Display_Value === "0" ? digit : Display_Value + digit;
     }
@@ -27,8 +26,6 @@ function Input_Digit(digit) {
 //this function handles decimal points
 function Input_Decimal (dot) {
     //this ensures that additional clicks of the decimal point don't cause bugs
-    //I understand that return stops the function, but I'm unsure how the comparison is related to a decimal already being present
-    //Where does the value of Wait_Second_Operand become true, such that it represents an already present decimal?
     if (Calculator.Wait_Second_Operand === true) return;
     //this checks to make sure there isn't already a decimal point
     //if there is no decimal point already, the point is concatenated to the display_Value
@@ -68,7 +65,7 @@ function Handle_Operator(Next_Operator) {
         result = (result * 1).toString()
         //converts the strings to numbers, displays the operator
         //and sets the first operand
-        Calculator.Display_Value = parseFLoat(result);
+        Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
     }
     //sets Wait_Second_Operand to true and the operator to the

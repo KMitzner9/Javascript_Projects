@@ -1,0 +1,79 @@
+#menuBG {
+    width: 750px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 750px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 250px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width:250px;
+    height: 200px;
+    float: left;
+}
+
+.center {
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 250px;
+    height: 200px;
+    float: right;
+}
+
+#showText {
+    width: 250px;
+    height:190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px, auto;
+    width: 500px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 250px;
+    width: 100px;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkslategray;
+    color: seagreen;
+    font-weight: bolder;
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: justify;
+    color: darkslategray;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: seagreen;
+}
+
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategray;
+}
