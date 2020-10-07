@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="arrow" onclick="easy_function()">click here</p><br>
+        <p id="test" onclick="easier_function()">click here</p>
+        <script>
+            easy_function = function() {
+                document.getElementById("arrow").innerHTML = "simple function is simple";
+            }
+            easier_function = () => document.getElementById("test").innerHTML = "simple function is simpler";
+        </script>
+    </body>
+</html>
