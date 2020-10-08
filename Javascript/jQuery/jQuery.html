@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+
+    <script>
+        //this function waits until the document is loaded to load this content
+        $(document).ready(function() {
+            $("html").append(       //adds this html string to the document to produce text
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Hello World!</p>\
+                            <p id='2'>Hola Mundo!</p>\
+                            <p id='3'>Shalom Olam!</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $("#2").css({"color":"red"});   //uses a css command to change the color of p2
+            $("#3").click(function() {      //hides the h1 element when p3 is clicked
+                $('h1').fadeOut("slow");    //controls the fade animation of the h1 element
+            });
+            $("#2").click(function() {      //displays the h1 element when p2 is clicked
+                $('h1').slideDown("fast");  //controls the slide animation of the h1 element
+            });
+
+        });
+
+
+
+    </script>
+
+
+</html>
