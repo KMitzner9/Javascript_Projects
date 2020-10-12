@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TITLE</title>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="demo"></div>
+        <script type="text/babel">
+        //creates a class called greeting and returns an HTML h1 element
+        class Greeting extends React.Component {
+            render() {
+                return <h1>Hello, World!</h1>
+            }
+        }
+        //displays the greeting in the demo div, and assigns it an XML tag of greeting
+        ReactDOM.render(<Greeting />, document.getElementById("demo"))
+        </script>
+    </body>
+
+</html>

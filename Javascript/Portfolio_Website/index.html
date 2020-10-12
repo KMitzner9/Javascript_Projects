@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+    <head>
+        <meta charset="utf=8">
+        <title>Kenzie Mitzner</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/Portfolio_CSS.css">
+    </head>
+
+<!-- Body -->
+<body class="Background">
+
+    <!-- NAV BAR -->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()" ondbckick="closeForm()">Contact</a>
+    </div>
+
+    <!-- HOME -->
+    <div id="Home">
+        <br>
+        <br>
+
+    <!-- VIDEO -->
+        <video autoplay muted loop id="FOL_Video"> <!-- I have chosen my own video to loop on mute -->
+            <source src="./Video/FOL_video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- VIDEO TEXT -->
+    <div class="Video_Text">
+        <h1 style="color: #edbc4a;">Kenzie Mitzner's Portfolio</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>You can have data without information,
+                        <br>but you cannot have information without data.
+                        </q>
+                        <br><br>-Daniel Keys Moran<br>
+                        <br><br>
+                        Hello! My name is Kenzie. 
+                        <br>Welcome to my portfolio website. 
+                        <br>Explore this page, check out my GitHub, or contact me to learn more about my background and experience.<br>
+                        <br>Thanks for stopping by!
+                    </center>
+                </strong>
+            </p>
+    </div>
+
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">1/4</div>
+                        <img class="Slide_Show_Images" src="./Images/headshot.jpg" style="width:100%">
+                        <div class="text">I'm available to assist you on your project!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">2/4</div>
+                        <img class="Slide_Show_Images" src="./Images/data_2.jpg" style="width:100%">
+                        <div class="text">I am a Tech Academy Bootcamp student <br> studying Data Science</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3/4</div>
+                        <img class="Slide_Show_Images" src="./Images/code_2.jpg" style="width:100%">
+                        <div class="text">I have basic knowledge of HTML, CSS, and JavaScript.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">4/4</div>
+                        <img class="Slide_Show_Images" src="./Images/contact_1.jpg" style="width:100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                        </div>
+                </div>
+
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="Row" id="About">
+        <div class="Column_2">
+            <img src="./Images/data_1.jpg" alt="Charts and Graphs">
+        </div>
+
+        <div class="Column_1">
+            <h1>About</h1>
+                <p>I am currently learning data science through <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Data Science Bootcamp. <br><br>I am eager to start my tech career as a junior analyst and see where the data takes me!</p>
+        </div>
+    </div>
+
+    <!-- GITHUB SECTION -->
+    <div class="Row" id="GitHub">
+        <div class="Column_1">
+            <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:<br>
+                <center><a href="https://github.com/KMitzner9" target="_blank">Kenzie's GitHub</a></center></p>
+        </div>
+
+        <div class="Column_2">
+            <a href="https://github.com/KMitzner9" target="_blank"><img id="gitlogo" src="./Images/github_octocat.png" alt="GitHub"></a>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io.info@learncodinganywhere.com" method="POST" class="form-container">
+            <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>
+            <center id="footname">Kenzie Mitzner</center>
+        </p>
+    </footer>
+
+    <script src="./JS/portfolio.js"></script>
+</body>
+</html>

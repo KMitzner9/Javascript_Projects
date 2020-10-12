@@ -4,10 +4,23 @@
         <meta charset="utf-8">
         <title>TITLE</title>
         <script src="JavaScript/JavaScript_1.js" defer></script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <style>
+            body {
+                opacity: 1;
+                transition: 1s opacity;
+            }
+
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+        </style>
     </head>
 
     <body>
-        <h1>What is your favorite apparatus?</h1>
+        <script>document.body.className += " fade-out";</script>
+        <h1 style="font-size:6vw">What is your favorite apparatus?</h1>
         <h3>Pick your favorite from the list:</h3>
         <ul>
             <li>Fabric</li>
@@ -26,6 +39,11 @@
         <button onclick="class_array()">Click me</button><br><br>
 
         <canvas id="canvas_1" width="300" height="300" style="border: 2px solid red;">your browser dont support</canvas>
+        <script>
+            $(function() {
+                $('body').removeClass('fade-out');
+            });
+        </script>
     </body>
 
 </html>

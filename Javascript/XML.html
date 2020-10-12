@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            var PinkFloyd = "<albums>" +
+                "<album>" + 
+                "<title>The Piper at the Gates of Dawn</title>" +
+                "<year>1967</year>" + 
+                "</album>" + "<album>" +
+                "<title>A Saucerful of Secrets</title>" +
+                "<year>1968</year>" +
+                "</album>" + "</albums>";
+            XML_Parser = new DOMParser();
+            XML_Document = XML_Parser.parseFromString(PinkFloyd, "text/xml");
+            document.getElementById("demo").innerHTML = XML_Document.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
