@@ -262,6 +262,15 @@ h1 {
     color: #c4ac72;
 }
 
+h4 {
+    text-align: center;
+}
+
+#skills {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 p {
     font-family: Perpetua, Rockwell Extra Bold;
     text-align: center;

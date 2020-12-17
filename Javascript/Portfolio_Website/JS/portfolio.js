@@ -9,7 +9,6 @@ function closeForm() {
   // this.close(); FIX
 }
 
-
 // This function covers the slide show
 var slideIndex = 1;
   showSlides(slideIndex);
