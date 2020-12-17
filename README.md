@@ -1,7 +1,7 @@
 # Javascript_Projects
  Projects for the Javascript course. This repository contains all the files created during the JavaScript course. Noteworthy projects are mentioned below.
  
-### Portfolio Website ([GitHub](https://github.com/KMitzner9/Javascript_Projects/tree/master/Javascript/Portfolio_Website)) ([Website]())
+### Portfolio Website ([GitHub](https://github.com/KMitzner9/Javascript_Projects/tree/master/Javascript/Portfolio_Website)) ([Website](http://www.kenziemitzner.com/))
 I created a portfolio website for myself using HTML and CSS. I used Javascript to create a popup contact form and slide show for the site.
 
 ### Circus Website ([GitHub](https://github.com/KMitzner9/Circus_Website)) ([Website]())
